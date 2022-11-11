@@ -1,0 +1,18 @@
+#!/bin/bash
+#Questions1: write a shell script to perform systems analysis including the following commands
+sudo apt update -y
+sleep 10
+cat /etc/os-release >> group3engrs.log
+echo $SHELL
+df -h
+sleep 5
+free -g
+sleep 10
+lscpu
+sleep 10
+top
+sleep 5
+echo " who is running the script : $USER "
+echo " what location was this script ran : $(pwd)"
+echo " welcome to Etech Consulting Devops MasterClass"
+echo " exit status of this script: `echo $?` "
